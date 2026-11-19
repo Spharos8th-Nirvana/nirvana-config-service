@@ -5,3 +5,19 @@ build/
 .env
 .env.*
 !.env.example
+
+### Gradle ###
+!gradle/wrapper/gradle-wrapper.jar
+
+### IDE ###
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+bin/
+out/
+
+### OS ###
+.DS_Store
