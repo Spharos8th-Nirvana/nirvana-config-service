@@ -40,6 +40,9 @@ export CONFIG_REPO_TOKEN=<token>
 
 GitHub → Settings → Developer settings → Fine-grained tokens → Resource owner `Spharos8th-Nirvana`, Repository `nirvana-config-repo`만 선택, Permissions → Contents: **Read-only**.
 
+- Organization 설정에 따라 토큰이 **관리자 승인 대기** 상태로 생성될 수 있습니다. 승인 전에는 `not authorized` 오류로 기동이 실패하므로 org 관리자에게 승인을 요청하세요.
+- 토큰이 틀리거나 비어 있으면 `clone-on-start` 설정 때문에 서버가 기동 단계에서 `not authorized`로 종료됩니다.
+
 ## 클라이언트 서비스 연결
 
 각 서비스에 `spring-cloud-starter-config`를 추가하고 `application.yml`에 다음을 둡니다.
